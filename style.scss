@@ -347,4 +347,21 @@ body {
     padding: 2rem;
     padding-top: 4rem;
   }
+
+  .companies {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .comp4 {
+    display: block !important;
+  }
+
+  .comp1,
+  .comp2,
+  .comp3,
+  .comp4,
+  .comp5 {
+    display: inline-flex;
+  }
 }

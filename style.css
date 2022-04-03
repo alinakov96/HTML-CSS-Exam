@@ -415,5 +415,25 @@ body {
     padding: 2rem;
     padding-top: 4rem;
   }
+  .companies {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .comp4 {
+    display: block !important;
+  }
+  .comp1,
+  .comp2,
+  .comp3,
+  .comp4,
+  .comp5 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 /*# sourceMappingURL=style.css.map */
