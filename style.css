@@ -422,6 +422,7 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    width: 80%;
   }
   .comp4 {
     display: block !important;
@@ -431,9 +432,8 @@ body {
   .comp3,
   .comp4,
   .comp5 {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    width: 16%;
+    margin: 4rem 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

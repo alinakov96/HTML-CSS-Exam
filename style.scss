@@ -351,6 +351,7 @@ body {
   .companies {
     display: flex;
     justify-content: space-evenly;
+    width: 80%;
   }
 
   .comp4 {
@@ -362,6 +363,7 @@ body {
   .comp3,
   .comp4,
   .comp5 {
-    display: inline-flex;
+    width: 16%;
+    margin: 4rem 2rem;
   }
 }
