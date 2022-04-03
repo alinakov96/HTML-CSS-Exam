@@ -385,6 +385,11 @@ body {
     display: flex;
     justify-content: flex-start;
 
+    .block2-text {
+      width: 40%;
+      padding: 4rem 4rem 0 0;
+    }
+
     .block2-image {
       display: flex;
       flex-direction: column;

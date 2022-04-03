@@ -465,6 +465,10 @@ body {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .block2 .block2-text {
+    width: 40%;
+    padding: 4rem 4rem 0 0;
+  }
   .block2 .block2-image {
     display: -webkit-box;
     display: -ms-flexbox;
