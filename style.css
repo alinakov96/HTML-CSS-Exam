@@ -96,11 +96,12 @@ body {
 }
 
 .block1 .block1-image {
-  width: 50%;
+  width: 60%;
 }
 
 .block1 .block1-image img {
   width: 100%;
+  position: relative;
 }
 
 .gradient {
@@ -146,6 +147,7 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  width: 100%;
 }
 
 .nfts .card1,
@@ -154,7 +156,7 @@ body {
 .nfts .card4 {
   border-radius: 5rem;
   margin: 0.5rem;
-  width: 20%;
+  min-width: 200px;
 }
 
 .nfts .card1 .top-pic,
@@ -168,16 +170,25 @@ body {
 .nfts .card2 .container,
 .nfts .card3 .container,
 .nfts .card4 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: lightgray;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
+  font-size: 50%;
+  display: -ms-grid;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.nfts .card1 .container .left,
+.nfts .card2 .container .left,
+.nfts .card3 .container .left,
+.nfts .card4 .container .left {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nfts .card1 .container .left h6,
@@ -192,6 +203,9 @@ body {
 .nfts .card3 .container .left p,
 .nfts .card4 .container .left p {
   color: gray;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .nfts .card1 .container .right,
@@ -199,6 +213,14 @@ body {
 .nfts .card3 .container .right,
 .nfts .card4 .container .right {
   text-align: right;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .nfts .card1 .container .right h6,
@@ -213,6 +235,9 @@ body {
 .nfts .card3 .container .right p,
 .nfts .card4 .container .right p {
   color: gray;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .nfts .card1 .container .price,
@@ -225,7 +250,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   height: 1.5rem;
+}
+
+.nfts .card1 .container .price img,
+.nfts .card2 .container .price img,
+.nfts .card3 .container .price img,
+.nfts .card4 .container .price img {
+  width: 10%;
 }
 
 .nfts .card1 .container .price h6,
@@ -233,6 +268,14 @@ body {
 .nfts .card3 .container .price h6,
 .nfts .card4 .container .price h6 {
   margin: 0;
+}
+
+.nfts .card1 {
+  margin-left: 0;
+}
+
+.nfts .card4 {
+  margin-right: 0;
 }
 
 .block2 {
