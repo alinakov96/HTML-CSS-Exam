@@ -163,7 +163,7 @@ body {
       border-bottom-left-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
       padding: 0 0.5rem;
-      font-size: 50%;
+      font-size: 90%;
       display: grid;
       gap: 0.5rem;
 
@@ -384,6 +384,7 @@ body {
   .block2 {
     display: flex;
     justify-content: flex-start;
+    width: 100%;
 
     .block2-text {
       width: 40%;
@@ -394,6 +395,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+
       img {
         height: 80%;
       }
