@@ -366,4 +366,10 @@ body {
     width: 16%;
     margin: 4rem 2rem;
   }
+
+  .nft-text {
+    display: inline-flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
 }
