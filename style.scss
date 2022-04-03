@@ -92,13 +92,13 @@ body {
       }
     }
   }
-}
 
-.block1-image {
-  width: 50%;
+  .block1-image {
+    width: 50%;
 
-  img {
-    width: 100%;
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -145,7 +145,7 @@ body {
 
 .nfts {
   margin: $main-margin;
-  display: flex;
+  display: inline-flex;
 
   .card1,
   .card2,
@@ -153,6 +153,7 @@ body {
   .card4 {
     border-radius: 5rem;
     margin: 0.5rem;
+    width: 20%;
 
     .top-pic {
       width: 100%;

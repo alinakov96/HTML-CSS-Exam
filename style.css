@@ -95,11 +95,11 @@ body {
   font-weight: bold;
 }
 
-.block1-image {
+.block1 .block1-image {
   width: 50%;
 }
 
-.block1-image img {
+.block1 .block1-image img {
   width: 100%;
 }
 
@@ -143,9 +143,9 @@ body {
 
 .nfts {
   margin: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .nfts .card1,
@@ -154,6 +154,7 @@ body {
 .nfts .card4 {
   border-radius: 5rem;
   margin: 0.5rem;
+  width: 20%;
 }
 
 .nfts .card1 .top-pic,
