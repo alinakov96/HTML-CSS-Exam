@@ -343,15 +343,16 @@ body {
 
   .gradient {
     border-radius: 10px;
-    width: 80%;
     padding: 2rem;
     padding-top: 4rem;
+    width: 90%;
+    margin: $main-margin;
   }
 
   .companies {
     display: flex;
     justify-content: space-evenly;
-    width: 80%;
+    margin: $main-margin;
   }
 
   .comp4 {
@@ -364,12 +365,19 @@ body {
   .comp4,
   .comp5 {
     width: 16%;
-    margin: 4rem 2rem;
+    margin: $main-margin;
   }
 
   .nft-text {
     display: inline-flex;
     flex-direction: column;
     align-self: flex-start;
+    margin: $main-margin;
+  }
+
+  .nfts {
+    margin: $main-margin;
+    display: inline-flex;
+    justify-content: space-evenly;
   }
 }

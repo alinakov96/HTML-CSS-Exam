@@ -411,9 +411,10 @@ body {
   }
   .gradient {
     border-radius: 10px;
-    width: 80%;
     padding: 2rem;
     padding-top: 4rem;
+    width: 90%;
+    margin: 2rem;
   }
   .companies {
     display: -webkit-box;
@@ -422,7 +423,7 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    width: 80%;
+    margin: 2rem;
   }
   .comp4 {
     display: block !important;
@@ -433,7 +434,7 @@ body {
   .comp4,
   .comp5 {
     width: 16%;
-    margin: 4rem 2rem;
+    margin: 2rem;
   }
   .nft-text {
     display: -webkit-inline-box;
@@ -445,6 +446,16 @@ body {
             flex-direction: column;
     -ms-flex-item-align: start;
         align-self: flex-start;
+    margin: 2rem;
+  }
+  .nfts {
+    margin: 2rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 /*# sourceMappingURL=style.css.map */
