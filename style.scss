@@ -385,4 +385,24 @@ body {
     display: flex;
     justify-content: flex-start;
   }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .info {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  .copy-right {
+    display: block !important;
+    color: $color-lightgray;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+  }
 }
