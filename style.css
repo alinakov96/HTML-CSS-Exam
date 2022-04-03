@@ -1,0 +1,344 @@
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem;
+}
+
+.top .menu {
+  color: gray;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.top .menu i {
+  font-size: 2rem;
+}
+
+.top nav {
+  display: none;
+}
+
+.top nav a {
+  text-decoration: none;
+  color: gray;
+  margin: 0rem 1rem;
+}
+
+.top nav a:last-child {
+  color: palevioletred;
+}
+
+.block1,
+.block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 0rem 2rem 2rem;
+}
+
+.block1 .block1-text {
+  width: 50%;
+}
+
+.block1 .block1-text h3 {
+  color: palevioletred;
+}
+
+.block1 .block1-text h1 {
+  font-weight: bold;
+}
+
+.block1 .block1-text p {
+  color: gray;
+}
+
+.block1 .block1-text .button {
+  width: 10rem;
+  text-align: center;
+  border: double 2px transparent;
+  border-radius: 80px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), radial-gradient(circle at top left, palevioletred, darkorange, yellowgreen);
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, palevioletred, darkorange, yellowgreen);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.block1 .block1-text .button .sign {
+  padding: 1rem 2rem;
+}
+
+.block1 .block1-text .button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.block1-image {
+  width: 50%;
+}
+
+.block1-image img {
+  width: 100%;
+}
+
+.gradient {
+  background-image: -webkit-gradient(linear, left top, right top, from(palevioletred), color-stop(darkorange), to(yellowgreen));
+  background-image: linear-gradient(to right, palevioletred, darkorange, yellowgreen);
+  padding: 0rem 1rem;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+.gradient h1 {
+  font-weight: 400;
+}
+
+.companies {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.companies .comp4 {
+  display: none;
+}
+
+.companies .comp2 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.nft-text {
+  margin: 2rem;
+}
+
+.nft-text p,
+.nft-text a {
+  color: gray;
+}
+
+.nfts {
+  margin: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nfts .card1,
+.nfts .card2,
+.nfts .card3,
+.nfts .card4 {
+  border-radius: 5rem;
+  margin: 0.5rem;
+}
+
+.nfts .card1 .top-pic,
+.nfts .card2 .top-pic,
+.nfts .card3 .top-pic,
+.nfts .card4 .top-pic {
+  width: 100%;
+}
+
+.nfts .card1 .container,
+.nfts .card2 .container,
+.nfts .card3 .container,
+.nfts .card4 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: lightgray;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0 2rem;
+}
+
+.nfts .card1 .container .left h6,
+.nfts .card2 .container .left h6,
+.nfts .card3 .container .left h6,
+.nfts .card4 .container .left h6 {
+  color: orange;
+}
+
+.nfts .card1 .container .left p,
+.nfts .card2 .container .left p,
+.nfts .card3 .container .left p,
+.nfts .card4 .container .left p {
+  color: gray;
+}
+
+.nfts .card1 .container .right,
+.nfts .card2 .container .right,
+.nfts .card3 .container .right,
+.nfts .card4 .container .right {
+  text-align: right;
+}
+
+.nfts .card1 .container .right h6,
+.nfts .card2 .container .right h6,
+.nfts .card3 .container .right h6,
+.nfts .card4 .container .right h6 {
+  color: gray;
+}
+
+.nfts .card1 .container .right p,
+.nfts .card2 .container .right p,
+.nfts .card3 .container .right p,
+.nfts .card4 .container .right p {
+  color: gray;
+}
+
+.nfts .card1 .container .price,
+.nfts .card2 .container .price,
+.nfts .card3 .container .price,
+.nfts .card4 .container .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1.5rem;
+}
+
+.nfts .card1 .container .price h6,
+.nfts .card2 .container .price h6,
+.nfts .card3 .container .price h6,
+.nfts .card4 .container .price h6 {
+  margin: 0;
+}
+
+.block2 {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+}
+
+.block2 h3 {
+  color: palevioletred;
+}
+
+.block2 h1 {
+  font-weight: bold;
+}
+
+.block2 p {
+  color: gray;
+}
+
+.block2 .button {
+  width: 10rem;
+  text-align: center;
+  border: double 2px transparent;
+  border-radius: 80px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), radial-gradient(circle at top left, palevioletred, darkorange, yellowgreen);
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, palevioletred, darkorange, yellowgreen);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.block2 .button .sign {
+  padding: 1rem 2rem;
+}
+
+.block2 .button a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.bottom {
+  margin: 2rem;
+}
+
+.bottom .logo-bottom p {
+  color: gray;
+}
+
+.bottom .logo-bottom .socials {
+  margin-bottom: 1rem;
+}
+
+.bottom .logo-bottom .socials a {
+  text-decoration: none;
+  color: gray;
+  margin: 0.5rem;
+}
+
+.bottom .logo-bottom .socials a:first-child {
+  margin-left: 0;
+}
+
+.bottom .info {
+  display: -ms-grid;
+  display: grid;
+}
+
+.bottom .info .nft {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.bottom .info .about,
+.bottom .info .nft,
+.bottom .info .contact,
+.bottom .info .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: gray;
+  margin-right: 3rem;
+}
+
+.bottom .info .about a,
+.bottom .info .nft a,
+.bottom .info .contact a,
+.bottom .info .media a {
+  text-decoration: none;
+  color: gray;
+  margin-bottom: 0.8rem;
+}
+
+.copyright {
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+
+.copyright .copy-left {
+  color: lightgray;
+}
+
+.copyright .copy-right {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

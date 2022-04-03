@@ -1,0 +1,301 @@
+$color-pink: palevioletred;
+$color-gray: gray;
+$color-lightgray: lightgray;
+$color-orange: orange;
+$lines: 1px solid $color-lightgray;
+$main-margin: 2rem;
+$block-margin: 2rem 0rem 2rem 2rem;
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin: $main-margin;
+
+  .menu {
+    color: $color-gray;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    i {
+      font-size: 2rem;
+    }
+  }
+
+  nav {
+    display: none;
+    a {
+      text-decoration: none;
+      color: $color-gray;
+      margin: 0rem 1rem;
+    }
+
+    a:last-child {
+      color: $color-pink;
+    }
+  }
+}
+
+.block1,
+.block2 {
+  display: flex;
+  justify-content: space-between;
+  margin: $block-margin;
+}
+
+.block1 {
+  .block1-text {
+    width: 50%;
+
+    h3 {
+      color: $color-pink;
+    }
+
+    h1 {
+      font-weight: bold;
+    }
+
+    p {
+      color: $color-gray;
+    }
+
+    .button {
+      width: 10rem;
+      text-align: center;
+      border: double 2px transparent;
+      border-radius: 80px;
+      background-image: linear-gradient(white, white),
+        radial-gradient(
+          circle at top left,
+          palevioletred,
+          darkorange,
+          yellowgreen
+        );
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+
+      .sign {
+        padding: 1rem 2rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.block1-image {
+  width: 50%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.gradient {
+  background-image: linear-gradient(
+    to right,
+    palevioletred,
+    darkorange,
+    yellowgreen
+  );
+
+  padding: 0rem 1rem;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+
+  h1 {
+    font-weight: 400;
+  }
+}
+
+.companies {
+  display: grid;
+  gap: 1rem;
+  margin: $main-margin;
+
+  .comp4 {
+    display: none;
+  }
+
+  .comp2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+.nft-text {
+  margin: $main-margin;
+
+  p,
+  a {
+    color: $color-gray;
+  }
+}
+
+.nfts {
+  margin: $main-margin;
+  display: flex;
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    border-radius: 5rem;
+    margin: 0.5rem;
+
+    .top-pic {
+      width: 100%;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      background-color: $color-lightgray;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      padding: 0 2rem;
+
+      .left {
+        h6 {
+          color: $color-orange;
+        }
+        p {
+          color: $color-gray;
+        }
+      }
+
+      .right {
+        text-align: right;
+
+        h6 {
+          color: $color-gray;
+        }
+        p {
+          color: $color-gray;
+        }
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+        height: 1.5rem;
+
+        h6 {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.block2 {
+  border-top: $lines;
+  border-bottom: $lines;
+  width: 100%;
+
+  h3 {
+    color: $color-pink;
+  }
+
+  h1 {
+    font-weight: bold;
+  }
+
+  p {
+    color: $color-gray;
+  }
+
+  .button {
+    width: 10rem;
+    text-align: center;
+    border: double 2px transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(white, white),
+      radial-gradient(
+        circle at top left,
+        palevioletred,
+        darkorange,
+        yellowgreen
+      );
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+    .sign {
+      padding: 1rem 2rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+
+.bottom {
+  margin: $main-margin;
+  .logo-bottom {
+    p {
+      color: $color-gray;
+    }
+    .socials {
+      margin-bottom: 1rem;
+      a {
+        text-decoration: none;
+        color: $color-gray;
+        margin: 0.5rem;
+      }
+
+      a:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .info {
+    display: grid;
+
+    .nft {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+
+    .about,
+    .nft,
+    .contact,
+    .media {
+      display: flex;
+      flex-direction: column;
+      color: $color-gray;
+      margin-right: 3rem;
+
+      a {
+        text-decoration: none;
+        color: $color-gray;
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+}
+
+.copyright {
+  margin: $main-margin;
+  margin-bottom: 4rem;
+  .copy-left {
+    color: $color-lightgray;
+  }
+
+  .copy-right {
+    display: none;
+  }
+}
