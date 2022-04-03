@@ -110,7 +110,6 @@ body {
     darkorange,
     yellowgreen
   );
-
   padding: 0rem 1rem;
   padding-top: 4rem;
   padding-bottom: 1rem;
@@ -123,7 +122,6 @@ body {
 .companies {
   display: grid;
   gap: 1rem;
-  margin: $main-margin;
 
   .comp4 {
     display: none;
@@ -321,5 +319,30 @@ body {
 
   .copy-right {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .top {
+    i {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gradient {
+    border-radius: 10px;
+    width: 80%;
   }
 }
