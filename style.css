@@ -57,12 +57,13 @@ body {
   margin: 2rem 0rem 2rem 2rem;
 }
 
-.block1 .block1-text {
-  width: 50%;
+.block1 h4,
+.block2 h4 {
+  color: palevioletred;
 }
 
-.block1 .block1-text h3 {
-  color: palevioletred;
+.block1 .block1-text {
+  width: 50%;
 }
 
 .block1 .block1-text h1 {
@@ -237,10 +238,6 @@ body {
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   width: 100%;
-}
-
-.block2 h3 {
-  color: palevioletred;
 }
 
 .block2 h1 {

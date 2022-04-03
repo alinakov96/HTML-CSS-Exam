@@ -48,15 +48,15 @@ body {
   display: flex;
   justify-content: space-between;
   margin: $block-margin;
+
+  h4 {
+    color: $color-pink;
+  }
 }
 
 .block1 {
   .block1-text {
     width: 50%;
-
-    h3 {
-      color: $color-pink;
-    }
 
     h1 {
       font-weight: bold;
@@ -202,10 +202,6 @@ body {
   border-top: $lines;
   border-bottom: $lines;
   width: 100%;
-
-  h3 {
-    color: $color-pink;
-  }
 
   h1 {
     font-weight: bold;
