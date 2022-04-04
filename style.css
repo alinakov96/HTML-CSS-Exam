@@ -121,6 +121,9 @@ body {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
+  margin: 2rem;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .companies .comp4 {

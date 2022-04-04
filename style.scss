@@ -123,6 +123,8 @@ body {
 .companies {
   display: grid;
   gap: 1rem;
+  margin: $main-margin;
+  align-self: center;
 
   .comp4 {
     display: none;
