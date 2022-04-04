@@ -227,7 +227,6 @@ body {
 .block2 {
   border-top: $lines;
   border-bottom: $lines;
-  width: 100%;
 
   h1 {
     font-weight: bold;
@@ -383,9 +382,11 @@ body {
   }
 
   .block2 {
+    margin: 0;
     display: flex;
-    justify-content: flex-start;
-    width: 100%;
+    justify-content: space-between;
+    align-self: center;
+    width: 94%;
 
     .block2-text {
       width: 40%;

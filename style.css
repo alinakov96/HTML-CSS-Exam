@@ -280,7 +280,6 @@ body {
 .block2 {
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
-  width: 100%;
 }
 
 .block2 h1 {
@@ -459,13 +458,16 @@ body {
             justify-content: space-evenly;
   }
   .block2 {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 94%;
   }
   .block2 .block2-text {
     width: 40%;
