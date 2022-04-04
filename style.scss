@@ -48,15 +48,15 @@ body {
   display: flex;
   justify-content: space-between;
   margin: $block-margin;
+
+  h4 {
+    color: $color-pink;
+  }
 }
 
 .block1 {
   .block1-text {
     width: 50%;
-
-    h3 {
-      color: $color-pink;
-    }
 
     h1 {
       font-weight: bold;
@@ -92,13 +92,14 @@ body {
       }
     }
   }
-}
 
-.block1-image {
-  width: 50%;
+  .block1-image {
+    width: 60%;
 
-  img {
-    width: 100%;
+    img {
+      width: 100%;
+      position: relative;
+    }
   }
 }
 
@@ -109,10 +110,10 @@ body {
     darkorange,
     yellowgreen
   );
-
   padding: 0rem 1rem;
   padding-top: 4rem;
   padding-bottom: 1rem;
+  width: 100%;
 
   h1 {
     font-weight: 400;
@@ -123,6 +124,7 @@ body {
   display: grid;
   gap: 1rem;
   margin: $main-margin;
+  align-items: center;
 
   .comp4 {
     display: none;
@@ -136,6 +138,7 @@ body {
 
 .nft-text {
   margin: $main-margin;
+  margin-bottom: 0;
 
   p,
   a {
@@ -145,7 +148,10 @@ body {
 
 .nfts {
   margin: $main-margin;
-  display: flex;
+  display: inline-flex;
+  width: 100%;
+  overflow: scroll;
+  margin-top: 0;
 
   .card1,
   .card2,
@@ -153,42 +159,60 @@ body {
   .card4 {
     border-radius: 5rem;
     margin: 0.5rem;
+    min-width: 200px;
 
     .top-pic {
       width: 100%;
     }
     .container {
-      display: flex;
-      justify-content: space-between;
       background-color: $color-lightgray;
       border-bottom-left-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
-      padding: 0 2rem;
+      padding: 0 0.5rem;
+      font-size: 90%;
+      display: grid;
+      gap: 0.5rem;
 
       .left {
+        display: grid;
+        align-items: center;
+
         h6 {
           color: $color-orange;
         }
         p {
           color: $color-gray;
+          grid-row-start: 3;
+          grid-row-end: 4;
         }
       }
 
       .right {
         text-align: right;
+        display: grid;
+        align-items: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
 
         h6 {
           color: $color-gray;
         }
         p {
           color: $color-gray;
+          grid-row-start: 3;
+          grid-row-end: 4;
         }
       }
 
       .price {
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         height: 1.5rem;
+
+        img {
+          width: 10%;
+        }
 
         h6 {
           margin: 0;
@@ -196,16 +220,19 @@ body {
       }
     }
   }
+
+  .card1 {
+    margin-left: 0;
+  }
+
+  .card4 {
+    margin-right: 0;
+  }
 }
 
 .block2 {
   border-top: $lines;
   border-bottom: $lines;
-  width: 100%;
-
-  h3 {
-    color: $color-pink;
-  }
 
   h1 {
     font-weight: bold;
@@ -297,5 +324,118 @@ body {
 
   .copy-right {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .top {
+    i {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gradient {
+    border-radius: 10px;
+    padding: 2rem;
+    padding-top: 4rem;
+    width: 90%;
+    margin: $main-margin;
+  }
+
+  .companies {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .comp4 {
+    display: block !important;
+  }
+
+  .comp1,
+  .comp2,
+  .comp3,
+  .comp4,
+  .comp5 {
+    width: 16%;
+  }
+
+  .nft-text {
+    display: inline-flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: $main-margin;
+  }
+
+  .nfts {
+    margin: $main-margin;
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-top: 0;
+  }
+
+  .block2 {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 94%;
+
+    .block2-text {
+      width: 40%;
+      padding: 4rem 4rem 0 0;
+    }
+
+    .block2-image {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      width: 60%;
+
+      .pic {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+
+      img {
+        height: 80%;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .info {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  .copy-right {
+    display: block !important;
+    color: $color-lightgray;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: space-between;
   }
 }
