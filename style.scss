@@ -138,6 +138,7 @@ body {
 
 .nft-text {
   margin: $main-margin;
+  margin-bottom: 0;
 
   p,
   a {
@@ -150,6 +151,7 @@ body {
   display: inline-flex;
   width: 100%;
   overflow: scroll;
+  margin-top: 0;
 
   .card1,
   .card2,

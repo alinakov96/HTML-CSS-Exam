@@ -139,6 +139,7 @@ body {
 
 .nft-text {
   margin: 2rem;
+  margin-bottom: 0;
 }
 
 .nft-text p,
@@ -153,6 +154,7 @@ body {
   display: inline-flex;
   width: 100%;
   overflow: scroll;
+  margin-top: 0;
 }
 
 .nfts .card1,
