@@ -352,7 +352,7 @@ body {
   .companies {
     display: flex;
     justify-content: space-evenly;
-    margin: $main-margin;
+    width: 100%;
   }
 
   .comp4 {
@@ -365,7 +365,6 @@ body {
   .comp4,
   .comp5 {
     width: 16%;
-    margin: $main-margin;
   }
 
   .nft-text {

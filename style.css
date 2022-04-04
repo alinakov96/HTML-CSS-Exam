@@ -423,7 +423,7 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin: 2rem;
+    width: 100%;
   }
   .comp4 {
     display: block !important;
@@ -434,7 +434,6 @@ body {
   .comp4,
   .comp5 {
     width: 16%;
-    margin: 2rem;
   }
   .nft-text {
     display: -webkit-inline-box;
