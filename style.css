@@ -464,6 +464,7 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin-top: 0;
   }
   .block2 {
     margin: 0;
