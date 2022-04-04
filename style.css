@@ -147,6 +147,7 @@ body {
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 100%;
+  overflow: scroll;
 }
 
 .nfts .card1,

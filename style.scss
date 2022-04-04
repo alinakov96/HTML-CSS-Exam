@@ -146,6 +146,7 @@ body {
   margin: $main-margin;
   display: inline-flex;
   width: 100%;
+  overflow: scroll;
 
   .card1,
   .card2,
